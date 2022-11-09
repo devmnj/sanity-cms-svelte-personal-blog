@@ -43,7 +43,7 @@
 		<form on:submit|preventDefault={onSubmit} class="-ml-20 flex p-4 text-left text-gray-700">
 			<img
 				class="mr-5 h-12 w-12 rounded-full"
-				src="https://ui-avatars.com/api/?name=John+Doe"
+				src={`https://ui-avatars.com/api/?name=Dev+${name}`}
 				alt=""
 			/>
 

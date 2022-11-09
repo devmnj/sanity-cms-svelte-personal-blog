@@ -89,7 +89,7 @@
 </script>
 
 <div class="w3-container">
-  <h2>{header}</h2>
+  <h2 class="justify-end uppercase font-bold justify-items-end flex text-purple-300 hover:text-yellow-300">{header} code</h2>
   <pre><code class="language-{language}">{code}</code></pre>
 </div>
 
