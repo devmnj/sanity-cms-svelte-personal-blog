@@ -7,7 +7,7 @@ module.exports = {
 	},
 	plugins: [require('daisyui'), require('flowbite/plugin')],
 	daisyui:{
-		themes: [ "night","bumblebee", "corporate"],
+		themes: [ "night"],
 		darkTheme: "dark",
 	}
 };
