@@ -1,6 +1,6 @@
 <div class="lg:flex">
     <img
-        class="object-fit w-full h-56 rounded-lg lg:w-64"
+        class="object-fit w-2/6  rounded-lg lg:w-64"
         src= {cover}
         alt=""
     />
@@ -18,9 +18,18 @@
 </div>
 
 <script>
-    export let cover;
+    /**
+	 * @type {any}
+	 */
+     export let cover;
     export let slug='/';
-    export let title;
-    export let summary;
+    /**
+	 * @type {any}
+	 */
+     export let title;
+    /**
+	 * @type {any}
+	 */
+     export let summary;
     export let date='1/2/2022'
 </script>

@@ -2,7 +2,7 @@
 	import SocialIcons from './SocialIcons.svelte';
 </script>
 
-<footer class="bg-base-300">
+<footer class="bg-base-300 ">
 	<div class="container p-6 mx-auto">
 		<div class="lg:flex">
 			<div class="w-full -mx-6 lg:w-2/5">

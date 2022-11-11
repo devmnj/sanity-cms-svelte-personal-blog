@@ -12,6 +12,7 @@
 	import CommentBox from '$lib/CommentBox.svelte';
 	import { onDestroy } from 'svelte';
 	import AniLink from 'components/AniLink.svelte';
+	import Image from '$lib/blocks/Image.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -88,18 +89,11 @@
 				<div class="place-content-center flex">
 					<img
 						class="rounded w-9/12 h-1/4"
-						src={`${urlFor(data.post[0].featured_image)}`}
+						src={`${urlFor(data?.post[0]?.featured_image)}`}
 						alt=" "
 					/>
 				</div>
-				<!-- Tags -->
-				<div class="flex mr-2 ">
-					{#if data?.post[0].tags}
-						{#each data?.post[0].tags as tag}
-							<Badge class="mx-1" color={colors[Math.floor(Math.random() * 4)]}>{tag}</Badge>
-						{/each}
-					{/if}
-				</div>
+				
 				<div class="" id="article">
 					<!-- svelte-ignore missing-declaration -->
 					<PortableText
@@ -109,20 +103,30 @@
 						}}
 						components={{
 							types: {
-								code: Code
+								code: Code,
+								image:Image
 							},
 
 							block: {
 								h1: Heading,
 								h2: Heading,
-								normal: Paragraph
+								normal: Paragraph,								 
 							}
 						}}
 					/>
 				</div>
 			</div>
 			<!-- <div>asdas</div> -->
+			
 		</article>
+		<!-- Tags -->
+		<div class="flex mr-2 ">
+			{#if data?.post[0]?.tags}
+				{#each data?.post[0]?.tags as tag}
+					<Badge class="mx-1 uppercase " color={colors[Math.floor(Math.random() * 4)]}>{tag}</Badge>
+				{/each}
+			{/if}
+		</div>
 		<div class="text-base-content">
 			<div class="flex text-base-content flex-wrap py-6 space-x-2 border-t border-dashed  " />
 
@@ -142,7 +146,7 @@
 					{/each}
 				</div>
 			{/if}
-
+ 
 			<!-- References -->
 			<div>
 				{#if data?.post[0]?.references}
@@ -154,6 +158,7 @@
 				{/if}
 			</div>
 
+			
 			<div class="space-y-2">
 				<CommentBox post={data?.post[0]._id} />
 

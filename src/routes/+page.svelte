@@ -4,8 +4,18 @@
 
 	import MainContainer from 'components/MainContainer.svelte';
 	import PostCard from '$lib/PostCard.svelte';
-    import {urlFor} from '$lib/ImageBuilder' 
-	export let data;
+	import { urlFor } from '$lib/ImageBuilder';
+	import { postsStore } from '$lib/store';
+	import { get } from 'svelte/store';
+	import { Skeleton } from 'flowbite-svelte';
+
+	/**
+	 * @type {any[]}
+	 */
+	let posts = [];
+	$: {
+		posts = get(postsStore);
+	}
 </script>
 
 <svelte:head>
@@ -15,25 +25,30 @@
 </svelte:head>
 
 <MainContainer>
-	<ParticlesAnimation/>
+	<!-- <ParticlesAnimation /> -->
 	<!-- Post Grid   -->
+
 	<div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1">
+		<!-- <div>{JSON.stringify(posts)}</div>  -->
+
 		<section class="bg-base-200 rounded-lg">
 			<div class="container px-6 py-10 mx-auto">
-				<h1 class="text-3xl font-semibold  capitalize lg:text-4xl ">
-					From the blog
-				</h1>
+				<h1 class="text-3xl font-semibold  capitalize lg:text-4xl ">From the blog</h1>
 
 				<div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
-					<!-- List of [posts] -->
-					<!-- <span class="text-red-700">	{JSON.stringify(data.posts)}</span> -->
-					{#if data?.posts}
-						{#each data?.posts as post}
-							<!-- <span class="text-red-700"> {JSON.stringify(post)}</span> -->
-							<PostCard title={post?.title} slug={post?.slug?.current} summary={post?.summary} cover={urlFor(post?.featured_image)} date={new Date(post?._createdAt).toDateString()} />
+					{#if posts}
+						{#each posts as post}
+							<PostCard
+								title={post?.title}
+								slug={post?.slug?.current}
+								summary={post?.summary}
+								cover={urlFor(post?.featured_image)}
+								date={new Date(post?._createdAt).toDateString()}
+							/>
 						{/each}
+					{:else}
+						<Skeleton />
 					{/if}
-
 				</div>
 			</div>
 		</section>
