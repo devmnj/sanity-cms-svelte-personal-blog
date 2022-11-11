@@ -8,12 +8,12 @@
     <div class="flex flex-col justify-between py-6 lg:mx-6">
         <a
             href={`/${slug}`}
-            class="text-xl font-semibold text-gray-800 hover:underline dark:text-white "
+            class="text-xl font-semibold text-base-content  hover:underline "
         >
     {title}
     </a>
-
-        <span class="text-sm text-gray-500 dark:text-gray-300">On:  {date}</span>
+<p>{summary}</p>
+        <span class="text-sm text-base-content">Published On  <strong>{date}</strong> </span>
     </div>
 </div>
 
@@ -21,6 +21,6 @@
     export let cover;
     export let slug='/';
     export let title;
-    // export let summary;
+    export let summary;
     export let date='1/2/2022'
 </script>

@@ -1,19 +1,21 @@
+<script>
+	import Highlight from 'svelte-highlight';
+	import typescript from 'svelte-highlight/languages/typescript';
+	import tokyoNightDark from 'svelte-highlight/styles/tokyo-night-dark';
+	import { onMount } from 'svelte'; 
 
-<script  >
-	import { onMount } from "svelte";
-    import Prismjs from "../Prismjs.svelte";
-    export let portableText;
-    
-    $:  
-      ({value} = portableText)
-      
-     onMount(()=>{
-      // console.log('Code:portableText');
-     })
-    
-  </script>
-  <svelte:head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-gruvbox-dark.min.css" integrity="sha512-XZoe1WroNfbcndQJexn+pbMEytiaSYRHDuKjew+Nn0xYSTmB4sfoZnBdqYCrXq2IwAcPZS/sXE5ju/JbppYOsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </svelte:head>
-<Prismjs language={value.language} code={value.code} header= {value.language} />
-  
+	export let portableText;
+
+	$: ({ value } = portableText);
+
+	onMount(() => {
+		// console.log('Code:portableText');
+	});
+</script>
+
+<svelte:head>
+	{@html tokyoNightDark}
+</svelte:head>
+<Highlight language={typescript} code={value.code} />
+<!-- <HighlightAuto code={value.code} /> -->
+

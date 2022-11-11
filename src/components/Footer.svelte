@@ -2,7 +2,7 @@
 	import SocialIcons from './SocialIcons.svelte';
 </script>
 
-<footer class="bg-white dark:bg-gray-900">
+<footer class="bg-base-300">
 	<div class="container p-6 mx-auto">
 		<div class="lg:flex">
 			<div class="w-full -mx-6 lg:w-2/5">
@@ -10,12 +10,12 @@
 					<div>
 						<a
 							href="/"
-							class="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+							class="text-xl font-bold  text-base-content  hover:text-gray-700 dark:hover:text-gray-300"
 							>DevTalk</a
 						>
 					</div>
 
-					<p class="max-w-sm mt-2 text-gray-500 dark:text-gray-400">
+					<p class="max-w-sm mt-2 ">
 						This is a developer community blog
 					</p>
 					<div class="mt-2"><SocialIcons /></div>
@@ -26,51 +26,51 @@
 			<div class="mt-6 lg:mt-0 lg:flex-1">
 				<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 					<div>
-						<h3 class="text-gray-700 uppercase dark:text-white">About</h3>
-						<a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+						<h3 class="text-primary-focus uppercase ">About</h3>
+						<a href="/" class="block mt-2 text-sm  hover:underline"
 							>Company</a
 						>
-						<a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+						<a href="/" class="block mt-2 text-sm  hover:underline"
 							>community</a
 						>
-						<a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+						<a href="/" class="block mt-2 text-sm   hover:underline"
 							>Careers</a
 						>
 					</div>
 
 					<div>
-						<h3 class="text-gray-700 uppercase dark:text-white">Contributions</h3>
-						<a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+						<h3 class="text-primary-focus ">Contributions</h3>
+						<a href="/" class="block mt-2 text-sm   hover:underline"
 							>Tec</a
 						>
-						<a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+						<a href="/" class="block mt-2 text-sm  hover:underline"
 							>Music</a
 						>
-						<a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+						<a href="/" class="block mt-2 text-sm  hover:underline"
 							>Videos</a
 						>
 					</div>
 
 					<div>
-						<h3 class="text-gray-700 uppercase dark:text-white">Projects</h3>
-						<a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+						<h3 class="text-primary-focus uppercase ">Projects</h3>
+						<a href="/" class="block mt-2 text-sm  hover:underline"
 							>Mega cloud</a
 						>
-						<a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+						<a href="/" class="block mt-2 text-sm  hover:underline"
 							>Aperion UI</a
 						>
-						<a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+						<a href="/" class="block mt-2 text-sm  hover:underline"
 							>Meraki UI</a
 						>
 					</div>
 
 					<div>
-						<h3 class="text-gray-700 uppercase dark:text-white">Contact</h3>
-						<span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+						<h3 class="text-primary-focus">Contact</h3>
+						<span class="block mt-2 text-sm  hover:underline"
 							>+1 526 654 8965</span
 						>
-						<span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-							>example@email.com</span
+						<span class="block mt-2 text-sm   hover:underline"
+							>blissfullscode@email.com</span
 						>
 					</div>
 				</div>
@@ -80,7 +80,7 @@
 		<hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
 
 		<div>
-			<p class="text-center text-gray-500 dark:text-gray-400">© DevTalk 2022 - All rights reserved</p>
+			<p class="text-center ">© DevTalk 2022 - All rights reserved</p>
 		</div>
 	</div>
 </footer>

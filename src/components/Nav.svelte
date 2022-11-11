@@ -1,4 +1,4 @@
-<div class="navbar bg-base-100">
+<div class="navbar bg-base-300">
 	<div class="navbar-start">
 	  <div class="dropdown">
 		<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
@@ -15,7 +15,7 @@
 	  </div>
 	</div>
 	<div class="navbar-center">
-	  <a class=" font-extrabold text-white hover:text-purple-300  text-2xl uppercase" href="/">Dev Talk</a>
+	  <a class=" font-extrabold   hover:text-purple-300  text-2xl uppercase" href="/">Dev Talk</a>
 	</div>
 	<div class="navbar-end">
 	  <button class="btn btn-ghost btn-circle">

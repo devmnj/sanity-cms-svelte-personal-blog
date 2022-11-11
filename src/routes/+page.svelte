@@ -18,10 +18,9 @@
 	<ParticlesAnimation/>
 	<!-- Post Grid   -->
 	<div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1">
-		 
-		<section class="bg-white dark:bg-gray-900">
+		<section class="bg-base-200 rounded-lg">
 			<div class="container px-6 py-10 mx-auto">
-				<h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">
+				<h1 class="text-3xl font-semibold  capitalize lg:text-4xl ">
 					From the blog
 				</h1>
 
@@ -31,13 +30,12 @@
 					{#if data?.posts}
 						{#each data?.posts as post}
 							<!-- <span class="text-red-700"> {JSON.stringify(post)}</span> -->
-							<PostCard title={post?.title} slug={post?.slug?.current} cover={urlFor(post?.featured_image)} date={post?._createdAt} />
+							<PostCard title={post?.title} slug={post?.slug?.current} summary={post?.summary} cover={urlFor(post?.featured_image)} date={new Date(post?._createdAt).toDateString()} />
 						{/each}
 					{/if}
 
 				</div>
 			</div>
 		</section>
-		 
 	</div>
 </MainContainer>

@@ -14,6 +14,7 @@
 						_type: 'reference',
 						_ref: post,
 					},
+					approved:true,
 					name:name,
 					emaail:email,
 					comment:comment,
