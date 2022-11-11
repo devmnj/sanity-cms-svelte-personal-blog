@@ -15,6 +15,7 @@
 	"devDependencies": {
 		"@playwright/test": "^1.25.0",
 		"@popperjs/core": "^2.11.6",
+		"@types/gtag.js": "^0.0.12",
 		"@portabletext/svelte": "^1.0.1",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",

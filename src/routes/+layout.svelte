@@ -2,6 +2,7 @@
 	import Footer from 'components/Footer.svelte';
 	import Nav from 'components/Nav.svelte';
 	import '../app.postcss';
+	import Analytics from '$lib/Analytics'
 </script>
 
 <svelte:head>
@@ -13,7 +14,7 @@
 	<meta name="refresh" content="60" />
 	<meta name="yandex-verification" content="fcfe7437dbe09115" />
 </svelte:head>
-
+<Analytics/>
 <div class="bg-base-100">
 	<!-- <Banner/> -->
 	 <Nav/>
