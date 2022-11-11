@@ -2,7 +2,7 @@
 	import Footer from 'components/Footer.svelte';
 	import Nav from 'components/Nav.svelte';
 	import '../app.postcss';
-	import Analytics from '$lib/Analytics'
+	import Analytics from  '$lib/Analytics.svelte'
 </script>
 
 <svelte:head>
