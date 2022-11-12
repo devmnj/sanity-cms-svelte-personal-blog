@@ -30,7 +30,7 @@
 				<ul>
                     {#if tags}
                         {#each tags as tag}
-                        <li><a href="/">{tag}</a></li>
+                        <li><a class="mr-2" href="/">{tag}</a></li>
                         {/each}
                     {/if}
 				</ul>

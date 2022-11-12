@@ -25,10 +25,10 @@
 </svelte:head>
 
 <MainContainer>
-	<!-- <ParticlesAnimation /> -->
+	<ParticlesAnimation />
 	<!-- Post Grid   -->
 
-	<div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1">
+	<div class="grid justify-center grid-cols-1 gap-6 my-5 sm:grid-cols-2 lg:grid-cols-1">
 		<!-- <div>{JSON.stringify(posts)}</div>  -->
 
 		<section class="bg-base-200 rounded-lg">

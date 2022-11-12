@@ -1,4 +1,4 @@
-import { error } from '@sveltejs/kit';
+// import { error } from '@sveltejs/kit';
 import client from '$lib/sanity';
 import { postsStore } from '$lib/store';
  
@@ -8,10 +8,8 @@ export async function load() {
    const posts =await data;
    postsStore.set(posts) 
     return {
-        
-       
+
     };
    
  
-  throw error(404, 'Not found');
 }
