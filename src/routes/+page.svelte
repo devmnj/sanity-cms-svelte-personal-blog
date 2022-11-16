@@ -1,5 +1,4 @@
 <script>
-	import ParticlesAnimation from '$lib/ParticlesAnimation.svelte';
 	/** @type {import('./$types').PageData} */
 
 	import MainContainer from 'components/MainContainer.svelte';
@@ -25,7 +24,6 @@
 </svelte:head>
 
 <MainContainer>
-	<ParticlesAnimation />
 	<!-- Post Grid   -->
 
 	<div class="grid justify-center grid-cols-1 gap-6 my-5 sm:grid-cols-2 lg:grid-cols-1">

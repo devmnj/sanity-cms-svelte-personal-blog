@@ -42,9 +42,8 @@
 	"dependencies": {
 		"@sanity/client": "^3.4.1",
 		"@sanity/image-url": "^1.0.1",
-		"daisyui": "^2.38.0",
-		"svelte-particles": "^2.5.3",
-		"tsparticles": "^2.5.3",
-		"tsparticles-engine": "^2.5.2"
+		"daisyui": "^2.38.0"
+	
+	 
 	}
 }

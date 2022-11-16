@@ -1,12 +1,26 @@
 <script>
  import client from '$lib/sanity';
+	/**
+	 * @type {string}
+	 */
 	let name;
+	/**
+	 * @type {string}
+	 */
 	let email;
+	/**
+	 * @type {string}
+	 */
 	let comment;
-	export let post;
+	/**
+	 * @type {any}
+	 */
+	 export let post;
 
-	const onSubmit = async () => {
+	const onSubmit = async (e) => {
 		try {
+			e.preventDefault();
+			
 			if (name && comment) {
         const doc ={
           _type: 'comment',
@@ -16,7 +30,7 @@
 					},
 					approved:true,
 					name:name,
-					emaail:email,
+					email:email,
 					comment:comment,
         }
 			 	client.create(doc).then((res)=>{

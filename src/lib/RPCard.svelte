@@ -1,14 +1,35 @@
 <script>
-	export let date;
+	/**
+	 * @type {any}
+	 */
+	 export let date;
 	export let author = 'Manoj';
-	export let slug;
-	export let title;
-	export let cover;
-	export let summary;
-	export let tags=[];
+	/**
+	 * @type {any}
+	 */
+	 export let slug;
+	/**
+	 * @type {any}
+	 */
+	 export let title;
+	/**
+	 * @type {any}
+	 */
+	 export let cover;
+	/**
+	 * @type {any}
+	 */
+	 export let summary;
+	/**
+	 * @type {any[]}
+	 */
+	 export let tags=[];
 
 	export let alt = false;
 
+	/**
+	 * @type {string}
+	 */
 	let bclass;
 
 	$: {

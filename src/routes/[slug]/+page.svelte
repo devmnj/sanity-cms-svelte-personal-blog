@@ -5,7 +5,6 @@
 	import { PortableText } from '@portabletext/svelte';
 	import Heading from '$lib/blocks/Heading.svelte';
 	import Paragraph from '$lib/blocks/Paragraph.svelte';
-	import SImage from '$lib/SImage.svelte';
 	import Code from '$lib/blocks/Code.svelte';
 	import { urlFor } from '$lib/ImageBuilder';
 	import RpCard from '$lib/RPCard.svelte';
@@ -19,6 +18,7 @@
 
 	let rtime = 0;
 	onMount(() => {
+		// @ts-ignore
 		const el = document.getElementById('article').innerText;
 		rtime = GetReadingTime(String(el));
 	});
@@ -161,7 +161,6 @@
 			
 			<div class="space-y-2">
 				<CommentBox post={data?.post[0]._id} />
-
 				{#if data.post[0]?.comments.length > 0}
 					<div class="antialiased mx-auto max-w-screen-sm">
 						<h3 class="mb-4 text-lg font-semibold ">Comments</h3>
