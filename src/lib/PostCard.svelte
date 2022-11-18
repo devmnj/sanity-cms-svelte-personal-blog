@@ -1,6 +1,6 @@
 <div class="lg:flex">
     <img
-        class="object-cover  w-2/6 h-5/12   rounded-lg lg:w-3/6 lg:h-5/12"
+        class="object-cover min-w-2/6 max-w-2/3 w-3/12  rounded-lg "
         src= {cover}
         alt=""
     />
