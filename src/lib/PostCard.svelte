@@ -1,11 +1,11 @@
 <div class="lg:flex">
     <img
-        class="object-fit w-2/6 h-12/5  rounded-lg lg:w-64"
+        class="object-fit w-2/6 h-5/12  rounded-lg lg:w-64 lg:h-74"
         src= {cover}
         alt=""
     />
 
-    <div class="flex flex-col justify-between py-6 lg:mx-6">
+    <div class="flex flex-col justify-between py-6 lg:mx-6 ">
         <a
             href={`/${slug}`}
             class="text-xl font-semibold text-base-content  hover:underline "
