@@ -26,7 +26,7 @@
 			<div class="mt-6 lg:mt-0 lg:flex-1">
 				<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 					<div>
-						<h2 class="text-primary-focus uppercase ">About</h2>
+						<div class="text-primary-focus uppercase ">About</div>
 						<a href="/" class="block mt-2 text-sm  hover:underline"
 							>Company</a
 						>
@@ -39,7 +39,7 @@
 					</div>
 
 					<div>
-						<h2 class="text-primary-focus ">Contributions</h2>
+						<div class="text-primary-focus ">Contributions</div>
 						<a href="/" class="block mt-2 text-sm   hover:underline"
 							>Tec</a
 						>
@@ -52,7 +52,7 @@
 					</div>
 
 					<div>
-						<h2 class="text-primary-focus uppercase ">Projects</h2>
+						<div class="text-primary-focus uppercase ">Projects</div>
 						<a href="/" class="block mt-2 text-sm  hover:underline"
 							>Mega cloud</a
 						>
@@ -65,7 +65,7 @@
 					</div>
 
 					<div>
-						<h2 class="text-primary-focus">Contact</h2>
+						<div class="text-primary-focus">Contact</div>
 						<span class="block mt-2 text-sm  hover:underline"
 							>+1 526 654 8965</span
 						>
