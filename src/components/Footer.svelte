@@ -27,45 +27,40 @@
 				<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 					<div>
 						<div class="text-primary-focus uppercase ">About</div>
-						<a href="/" class="block mt-2 text-sm  hover:underline"
-							>Company</a
+						<a href="https://github.com/devmnj" class="block mt-2 text-sm  hover:underline"
+							>Github Profile</a
 						>
-						<a href="/" class="block mt-2 text-sm  hover:underline"
-							>community</a
-						>
-						<a href="/" class="block mt-2 text-sm   hover:underline"
-							>Careers</a
-						>
+						 
 					</div>
 
 					<div>
-						<div class="text-primary-focus ">Contributions</div>
+						<div class="text-primary-focus uppercase">Contributions</div>
 						<a href="/" class="block mt-2 text-sm   hover:underline"
-							>Tec</a
+							>Prismic</a
 						>
 						<a href="/" class="block mt-2 text-sm  hover:underline"
-							>Music</a
+							>HyGraph</a
 						>
 						<a href="/" class="block mt-2 text-sm  hover:underline"
-							>Videos</a
+							>Contentful</a
 						>
 					</div>
 
 					<div>
 						<div class="text-primary-focus uppercase ">Projects</div>
 						<a href="/" class="block mt-2 text-sm  hover:underline"
-							>Mega cloud</a
+							>Svelte Components</a
 						>
 						<a href="/" class="block mt-2 text-sm  hover:underline"
-							>Aperion UI</a
+							>Vue UI</a
 						>
 						<a href="/" class="block mt-2 text-sm  hover:underline"
-							>Meraki UI</a
+							>React loaders</a
 						>
 					</div>
 
 					<div>
-						<div class="text-primary-focus">Contact</div>
+						<div class="text-primary-focus uppercase">Contact</div>
 						<span class="block mt-2 text-sm  hover:underline"
 							>+1 526 654 8965</span
 						>
