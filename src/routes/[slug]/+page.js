@@ -1,4 +1,4 @@
-import { error } from '@sveltejs/kit';
+ 
 import client from '$lib/sanity';
  
 /** @type {import('./$types').PageLoad} */
@@ -27,5 +27,5 @@ export async function load({params} ) {
     };
    
  
-  throw error(404, 'Not found');
+ 
 }

@@ -5,7 +5,7 @@ const client = sanityClient({
     projectId: "n2amzrlx",
     dataset: "production",
     apiVersion: "2022-10-21",
-    token:'skvaNC5BHN2TTNrHa9imGGe9n6fg8xY2OFSejSVKxLGbbPFw2ITwivky2NbTfFVuZjwWEelH1jx7ng7BEiIH3IYgGXzKclyDNhxE3OaRUWcPgsKq0zXeBNMJxpmyxuDHerpcUtTnlLArX6RxOKa4xOqU8H357XNpoElfsN9YmxzWSnFzlUwE',
+    token:'skXPwUTlsP9L6Hg5S0cNFu5fGwHQhdsaWYnFGLCIl3ld881NlkqbrOPr0ZQ0mKAHNW5D9UD8qrxn5FUNElcGnb8Rogii4EbYD4QD7oTJo2YiCeyDbcJ8H2aKwIQclC9CJCNKiQg4jlmXnNuGB3mlyXgZX8Qv7zaR4Z1NvxmMpfdyoSPOHlwS',
     useCdn: false
   });
 
