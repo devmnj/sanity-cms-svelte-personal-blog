@@ -55,15 +55,15 @@
 
 <div>
 	<!-- <span class="text-white"> {JSON.stringify(data)}</span>  -->
-	<div class=" max-w-7xl text-base-content py-16 mx-auto space-y-8">
+	<div class="max-w-7xl  text-base-content py-16 px-16 mx-auto">
 		<!-- <article class="  flex-col   dark:bg-gray-800 dark:text-gray-50"></article> -->
-		<article class="flex ">
+		<article class="flex1 ">
 			<!-- <div class="py-2/3 w-2/3">
 				<div>	Link 1</div>
 				<div>	Link 2</div>
 				</div> -->
 			<div>
-				<div class="">
+				<!-- <div class=""> -->
 					<h1 class="text-4xl text-neutral-content font-bold md:tracking-tight pb-3 md:text-5xl">
 						{data?.post[0]?.title}
 					</h1>
@@ -85,7 +85,7 @@
 						</div>
 						<p class="flex-shrink-0 mt-3 text-sm md:mt-0" />
 					</div>
-				</div>
+				<!-- </div> -->
 				<div class="place-content-center flex">
 					<img
 						class="rounded w-9/12 h-1/4"
@@ -149,6 +149,8 @@
  
 			<!-- References -->
 			<div>
+				<h4 class="text-lg  font-semibold">References</h4>
+
 				{#if data?.post[0]?.references}
 					<li>
 						{#each data?.post[0]?.references as reference}
