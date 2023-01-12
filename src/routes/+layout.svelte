@@ -18,7 +18,7 @@
 <div class="bg-base-100">
 	<!-- <Banner/> -->
 	 <Nav/>
-	<div class="bg-base-100 text-white items-center overflow-auto">
+	<div class="bg-base-200 text-white items-center overflow-auto">
 		<main><slot /></main>
 	</div>
  <Footer/>

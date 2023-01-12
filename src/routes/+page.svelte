@@ -29,11 +29,11 @@
 	<!-- <div class="grid justify-center grid-cols-1 gap-6 my-5 md:grid-col-3 sm:grid-cols-2 lg:grid-cols-1"> -->
 		<!-- <div>{JSON.stringify(posts)}</div>  -->
 
-		<section class="bg-base-200   rounded-lg mb-5 my-3">
+		<section class="bg-base-200   rounded-lg ">
 			<div class="container space mx-auto">
 				<h1 class="text-3xl font-semibold  capitalize lg:text-4xl ">From the blog</h1>
 
-				<div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 sm:grid-col-2 md:grid-cols-2 lg:grid-col-3">
+				<div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 sm:grid-col-2 md:grid-cols-2 lg:grid-col-3 m-6">
 					{#if posts}
 						{#each posts as post}
 							<PostCard
