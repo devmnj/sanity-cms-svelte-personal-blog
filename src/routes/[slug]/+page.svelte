@@ -24,6 +24,9 @@
 	});
 
 	//reading time
+	/**
+	 * @param {string} text
+	 */
 	function GetReadingTime(text) {
 		const wpm = 255;
 		const words = String(text).trim().split(/\s+/).length;
@@ -149,9 +152,10 @@
  
 			<!-- References -->
 			<div>
-				<h4 class="text-lg  font-semibold">References</h4>
+				
 
 				{#if data?.post[0]?.references}
+				<h4 class="text-lg  font-semibold">References</h4>
 					<li>
 						{#each data?.post[0]?.references as reference}
 							<ul><AniLink caption={reference} link={reference} /></ul>

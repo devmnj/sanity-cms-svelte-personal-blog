@@ -1,6 +1,7 @@
 {
 	"name": "sanity-blog2",
 	"version": "0.0.1",
+	"author":  "Manoj A.P" ,
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
