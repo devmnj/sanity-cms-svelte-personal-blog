@@ -1,4 +1,5 @@
 <script>
+	import { sveltekit } from '@sveltejs/kit/vite';
 	import SocialIcons from './SocialIcons.svelte';
 </script>
 
@@ -35,26 +36,26 @@
 
 					<div>
 						<div class="text-primary-focus uppercase">Contributions</div>
-						<a href="/" class="block mt-2 text-sm   hover:underline"
-							>Prismic</a
+						<a href="https://javascriptsu.wordpress.com" class="block mt-2 text-sm   hover:underline"
+							>WordPress Blog</a
 						>
-						<a href="/" class="block mt-2 text-sm  hover:underline"
-							>HyGraph</a
+						<a href="https://javascriptsu.wordpress.com/portfolio/nuxt-prismic-headless-cms-blog/" class="block mt-2 text-sm  hover:underline"
+							>Prismic Blog (Nuxt)</a
 						>
-						<a href="/" class="block mt-2 text-sm  hover:underline"
-							>Contentful</a
+						<a href="https://javascriptsu.wordpress.com/portfolio/covid-dashboard/" class="block mt-2 text-sm  hover:underline"
+							>Covid Dashboard (Py)</a
 						>
 					</div>
 
 					<div>
 						<div class="text-primary-focus uppercase ">Projects</div>
-						<a href="/" class="block mt-2 text-sm  hover:underline"
-							>Svelte Components</a
+						<a href="https://github.com/devmnj/remix-mdx-blog-app" class="block mt-2 text-sm  hover:underline"
+							>Remix MD Blog</a
 						>
-						<a href="/" class="block mt-2 text-sm  hover:underline"
-							>Vue UI</a
+						<a href="https://github.com/devmnj/sveltekit-prismic-headless-cms-blog" class="block mt-2 text-sm  hover:underline"
+							>Sveltekit Primic Blog</a
 						>
-						<a href="/" class="block mt-2 text-sm  hover:underline"
+						<a href="https://github.com/devmnj/react-css-loaders" class="block mt-2 text-sm  hover:underline"
 							>React loaders</a
 						>
 					</div>
