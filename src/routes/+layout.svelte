@@ -12,7 +12,8 @@
 		content="css,javascript,typesvript,html,tailwinccss,react,svelte,vue,golang,next,nuxt,c#,xml,.net"
 	/>
 	<meta name="refresh" content="60" />
-	<meta name="yandex-verification" content=" 88928c1e8d3115e9" />
+
+	<meta name="yandex-verification" content="88928c1e8d3115e9" />
 	
 </svelte:head>
 <Analytics/>
