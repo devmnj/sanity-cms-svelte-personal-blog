@@ -1,6 +1,9 @@
 <script>
 	import { sveltekit } from '@sveltejs/kit/vite';
 	import SocialIcons from './SocialIcons.svelte';
+
+	var date = new Date();
+	let year = date.getFullYear();
 </script>
 
 <footer class="bg-base-300 ">
@@ -66,7 +69,7 @@
 							>+1 526 654 8965</span
 						>
 						<span class="block mt-2 text-sm   hover:underline"
-							>blissfullscode@email.com</span
+							>codehat@outlook.com</span
 						>
 					</div>
 				</div>
@@ -76,7 +79,7 @@
 		<hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
 
 		<div>
-			<p class="text-center ">© DevTalk 2022 - All rights reserved</p>
+			<p class="text-center ">© DevTalk {year} - All rights reserved</p>
 		</div>
 	</div>
 </footer>
